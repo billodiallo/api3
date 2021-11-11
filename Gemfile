@@ -8,6 +8,7 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 gem "pg"
+gem 'cleanup'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -18,6 +19,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -54,6 +56,7 @@ group :test do
   gem 'webdrivers'
   gem 'factory_bot_rails', '~> 6.2'
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
   
 end
 
