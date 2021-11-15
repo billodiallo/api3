@@ -47,7 +47,7 @@ RSpec.describe 'Books', type: :request do
   describe 'POST /books/:id' do
     let!(:history) { create(:category) }
     let(:valid_attributes) do
-      { title: 'Whispers of Time', author: 'Mista john',
+      { title: 'soleil des independances', author: 'Amadou kourouma',
         category_id: history.id }
     end
 
