@@ -23,13 +23,13 @@ RSpec.describe 'Categories', type: :request do
   # Test suite for POST /category
   describe 'POST /category' do
     # valid payload
-    let(:valid_name) { { name: 'Horror' } }
+    let(:valid_name) { { name: 'Actions' } }
 
     context 'when the request is valid' do
       before { post '/api/v1/categories', params: valid_name }
 
       it 'creates a category' do
-        expect(json['name']).to eq('Horror')
+        expect(json['name']).to eq('Actions')
       end
 
       it 'returns status code 201' do

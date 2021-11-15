@@ -47,7 +47,7 @@ RSpec.describe 'Books', type: :request do
   describe 'POST /books/:id' do
     let!(:history) { create(:category) }
     let(:valid_attributes) do
-      { title: 'Whispers of Time', author: 'Dr. Krishna Saksena',
+      { title: 'Whispers of Time', author: 'Mista john',
         category_id: history.id }
     end
 
@@ -73,7 +73,7 @@ RSpec.describe 'Books', type: :request do
   end
 
   describe 'PUT /books/:id' do
-    let(:valid_attributes) { { title: 'Saffron Swords' } }
+    let(:valid_attributes) { { title: 'Aventure' } }
 
     before { put "/api/v1/books/#{book_id}", params: valid_attributes }
 
@@ -84,7 +84,7 @@ RSpec.describe 'Books', type: :request do
 
       it 'updates the book' do
         updated_item = Book.find(book_id)
-        expect(updated_item.title).to match(/Saffron Swords/)
+        expect(updated_item.title).to match(/Aventure/)
       end
     end
 
