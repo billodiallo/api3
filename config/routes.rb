@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'users/Authentication'
   namespace :api do
@@ -6,7 +8,6 @@ Rails.application.routes.draw do
       resources :books, only: %i[index create show update destroy]
       post 'login', to: 'authentication#create'
       post 'register', to: 'users#create'
-
     end
   end
 end
