@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BookRepresenter
   def initialize(book)
     @book = book

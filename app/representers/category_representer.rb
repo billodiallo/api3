@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CategoryRepresenter
   def initialize(category)
     @category = category
