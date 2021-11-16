@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 FactoryBot.define do
   factory :user do
@@ -5,5 +6,3 @@ FactoryBot.define do
     password { 'password' }
   end
 end
-
-
